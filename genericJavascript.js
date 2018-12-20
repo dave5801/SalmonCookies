@@ -24,6 +24,10 @@ Store.prototype.render = function(){
     tdEl.textContent = this.storeName;
     trEl.appendChild(tdEl);
 
+    tdEl = document.createElement('td');
+    tdEl.textContent = this.minCustomers
+    trEl.appendChild(tdEl);
+
     salmonCookieTable.appendChild(trEl);
 };
 
